@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>99 Verhalen</h1>
+        <p>Dit zijn 99 verschillende verhalen geschreven door Molovich.</p>
+
+        <form action="/action_page.php">
+            <input type="text" placeholder="Zoeken..">
+            <button type="submit">Submit</button>
+        </form>
+    </header>
+
+    <section class="sorteren">
+        <h2>sorteren op:</h2>
+
+        <form action="/action_page.php">
+            <select name="populariteit">
+                <option value="">Populariteit</option>
+                <option value="laag naar hoog">Laag naar hoog</option>
+                <option value="hoog naar laag">Hoog naar laag</option>
+            </select>
+        </form>
+
+        <form action="/action_page.php">
+            <select name="beoordeling">
+                <option value="">Beoordeling</option>
+                <option value="laag naar hoog">Laag naar hoog</option>
+                <option value="hoog naar laag">Hoog naar laag</option>
+            </select>
+        </form>
+    </section>
+
+    <main>
+        <section>
+            <article>
+
+                <h3> Vrije versvorm</h3>
+                <a href="vrijeversvorm.html">
+                    <img src="images/vrijeversvorm.jpg" alt="thumbnail">
+                </a>
+
+                <p>Gemeenteblik, draaiende wielen stoppen, schimmen lopen van en naar...</p>
+
+            </article>
+        </section>
+
+        <section>
+            <article>
+
+                <h3> Vrije versvorm</h3>
+                <a href="vrijeversvorm.html">
+                    <img src="images/vrijeversvorm.jpg" alt="thumbnail">
+                </a>
+
+                <p>Gemeenteblik, draaiende wielen stoppen, schimmen lopen van en naar...</p>
+
+            </article>
+        </section>
+    </main>
+
+
+    <h3>Filters</h3>
+    <p>Leesduur</p>
+    <input type="range" min="0" max="10" value="50" class="slider">
+
+    <h4>Verhaallengte</h4>
+    <button type="button">kort</button>
+    <button type="button">middel</button>
+    <button type="button">lang</button>
+
+    <h4>Onderwerp</h4>
+    <form action="/action_page.php">
+        <select name="onderwerp">
+            <option value="">onderwerp</option>
+            <option value="vrolijk">Vrolijk</option>
+            <option value="Duister">Duister</option>
+            <option value="Chaotisch">Chaotisch</option>
+            <option value="Fantasie">Fantasie</option>
+            <option value="Liefde">Liefde</option>
+            <option value="Celebrities">Celebrities</option>
+            <option value="Zweverig">Zweverig</option>
+            <option value="Informeel">Informeel</option>
+        </select>
+    </form>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
