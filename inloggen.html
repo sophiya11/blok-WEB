@@ -1,34 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <title>Inlogformulier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/style2.css" />
 </head>
 
 <body>
 
+       <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.eurostar.com/nl-nl/?"><img src="images/eurologo.png" alt="eurostar logo"></a></li>
+                <li><a href="web.html">Leeslijst</a></li>
+                <li><a href="inloggen.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <section>
         <img src="images/avatar.png" alt="avatar">
         <h1>Log in</h1>
-        <form action="#">
+        <form action="web.html">
 
             <label for="name">Naam</label>
             <input id="naam" type="text" placeholder="Voornaam">
 
-            <label>E-mail <input type="email" placeholder="example@email.com"></label>
+            <label for="email">E-mail <input type="email" placeholder="example@email.com"></label>
 
-            <label>Postcode <input type="text" required length="6" pattern="[1-9][0-9]{3} ?(?)" placeholder="1234AB"></label>
+            <label for="postcode"> Postcode <input type="text" required length="6" pattern="[1-9][0-9]{3} ?(?)" placeholder="1234AB"></label>
 
-             <label>Geboortedatum <input type="date" placeholder="dd-mm-jjjj"></label>
+             <label for="geboortedatum">Geboortedatum <input type="date" placeholder="dd-mm-jjjj"></label>
 
-             <input type="submit" value="login">
+             <a href="web.html"><input type="submit" value="login"></a>
 
             <a href="#">Wachtwoord vergeten?</a>
             <a href="#">Heeft u nog geen account?</a>
 
         </form>
     </section>
+
+    <footer>
+
+    </footer>
 
 </body>
 </html>

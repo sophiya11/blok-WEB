@@ -1,100 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400|Maven+Pro|Montserrat|PT+Sans" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
+    <script src="js/javascript.js"></script>
     <header>
-        <h1>99 Verhalen</h1>
-        <p>Dit zijn 99 verschillende verhalen geschreven door Molovich.</p>
-
-        <form action="/action_page.php">
-            <input type="text" placeholder="Zoeken..">
-            <button type="submit">Submit</button>
-        </form>
+        <nav>
+            <ul>
+                <li><a href="https://www.eurostar.com/nl-nl/?"><img src="images/eurologo.png" alt="eurostar logo"></a></li>
+                <li><a href="web.html">Leeslijst</a></li>
+                <li><a href="inloggen.html">Account</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="sorteren">
-        <h2>sorteren op:</h2>
-
-        <form action="/action_page.php">
-            <select name="populariteit">
-                <option value="">Populariteit</option>
-                <option value="laag naar hoog">Laag naar hoog</option>
-                <option value="hoog naar laag">Hoog naar laag</option>
-            </select>
-        </form>
-
-        <form action="/action_page.php">
-            <select name="beoordeling">
-                <option value="">Beoordeling</option>
-                <option value="laag naar hoog">Laag naar hoog</option>
-                <option value="hoog naar laag">Hoog naar laag</option>
+    <section>
+        <form>
+            <select name="sorteer">
+                <option value="sorteer">sorteer</option>
+                <option value="hoog naar laag">Populariteit - hoog naar laag</option>
+                <option value="laag naar hoog">Populariteit - laag naar hoog</option>
+                <option value="hoog naar laag">Beoordeling - hoog naar laag</option>
+                <option value="laag naar hoog">Beoordeling - laag naar hoog</option>
             </select>
         </form>
     </section>
 
-    <main>
-        <section>
-            <article>
 
-                <h3> Vrije versvorm</h3>
-                <a href="vrijeversvorm.html">
-                    <img src="images/vrijeversvorm.jpg" alt="thumbnail">
-                </a>
+    <div id="myFiltermenu" class="filtermenu">
 
-                <p>Gemeenteblik, draaiende wielen stoppen, schimmen lopen van en naar...</p>
+        <h3>zoeken</h3>
+        <form>
+            <input type="text" placeholder="Zoeken..">
+        </form>
 
-            </article>
-        </section>
+        <form>
+            <h3>Onderwerp </h3>
+            <ul>
+                <li>
+                    <input type="checkbox">
+                    <label>vreugde</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>Fictie</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>Bekende mensen</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>Duister</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>Vaag</label>
+                </li>
+            </ul>
 
-        <section>
-            <article>
+            <h3>Leesduur </h3>
+            <ul>
+                <li>
+                    <input type="checkbox">
+                    <label>0 - 1 minuut</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>1 - 3 minuten</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label> 3 + minuten</label>
+                </li>
 
-                <h3> Vrije versvorm</h3>
-                <a href="vrijeversvorm.html">
-                    <img src="images/vrijeversvorm.jpg" alt="thumbnail">
-                </a>
+            </ul>
 
-                <p>Gemeenteblik, draaiende wielen stoppen, schimmen lopen van en naar...</p>
+            <h3>Verhaallengte </h3>
+            <ul>
+                <li>
+                    <input type="checkbox">
+                    <label>Kort</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>Middel</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>Lang</label>
+                </li>
 
-            </article>
-        </section>
-    </main>
+            </ul>
+
+        </form>
+
+    </div>
 
 
-    <h3>Filters</h3>
-    <p>Leesduur</p>
-    <input type="range" min="0" max="10" value="50" class="slider">
 
-    <h4>Verhaallengte</h4>
-    <button type="button">kort</button>
-    <button type="button">middel</button>
-    <button type="button">lang</button>
 
-    <h4>Onderwerp</h4>
-    <form action="/action_page.php">
-        <select name="onderwerp">
-            <option value="">onderwerp</option>
-            <option value="vrolijk">Vrolijk</option>
-            <option value="Duister">Duister</option>
-            <option value="Chaotisch">Chaotisch</option>
-            <option value="Fantasie">Fantasie</option>
-            <option value="Liefde">Liefde</option>
-            <option value="Celebrities">Celebrities</option>
-            <option value="Zweverig">Zweverig</option>
-            <option value="Informeel">Informeel</option>
-        </select>
-    </form>
+    <h1>99 Verhalen</h1>
+
+    <hr />
+
+    <p>Wilt u verhalen lezen tijdens uw reis? Dan hebben wij de beste collectie aan verhalen waar u uit kan kiezen! Breng je reis door met de verhalen van Molovich. </p>
+
+
+    <div>
+        <article>
+
+            <h3> Vrije versvorm</h3>
+            <a href="verhaal.html">
+                <img src="images/vrijeversvorm.jpg" alt="Foto vrije versvorm">
+
+            </a>
+
+
+
+            <footer>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                <p>276 x gelezen </p>
+
+                <div class="more">
+                    <svg width="32px" height="32px" viewBox="0 0 32 32">
+                        <circle cx="16" cy="16" r="15"></circle>
+                        <g id="plus">
+                            <path d="M16,11 L16,21"></path>
+                            <path d="M11,16 L21,16"></path>
+                        </g>
+                    </svg>
+                </div>
+                <!-- bron:https://dribbble.com/shots/3124507-Add-Cancel-Micro-Interaction -->
+            </footer>
+
+        </article>
+
+
+        <article>
+
+            <h3> Zombie </h3>
+            <a href="vrijeversvorm.html">
+                <img src="images/vrijeversvorm.jpg" alt="thumbnail">
+            </a>
+            <footer>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                <p>314 x gelezen </p>
+            </footer>
+
+        </article>
+
+        <article>
+
+            <h3> Haiku </h3>
+            <a href="vrijeversvorm.html">
+                <img src="images/vrijeversvorm.jpg" alt="thumbnail">
+            </a>
+
+
+
+        </article>
+
+        <article>
+
+            <h3> Zoon </h3>
+            <a href="vrijeversvorm.html">
+                <img src="images/vrijeversvorm.jpg" alt="thumbnail">
+            </a>
+
+
+        </article>
+
+        <article>
+
+            <h3> Droom </h3>
+            <a href="vrijeversvorm.html">
+                <img src="images/vrijeversvorm.jpg" alt="thumbnail">
+            </a>
+
+
+
+        </article>
+
+        <article>
+
+            <h3> Beroemd </h3>
+            <a href="vrijeversvorm.html">
+                <img src="images/vrijeversvorm.jpg" alt="thumbnail">
+            </a>
+
+
+
+        </article>
+
+    </div>
+
 
     <footer>
 
     </footer>
+    <script type="text/javascript" src="js/javascript.js"></script>
 
 </body>
 

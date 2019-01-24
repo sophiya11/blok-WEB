@@ -8,12 +8,19 @@ body{
     background-position:center;
     font-family: sans-serif;
 }
+header ul {
+    margin: 0;
+    background-color: #0A183C;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 section {
     width: 340px;
     height: 520px;
     background: #000;
     color:#fff;
-    top: 50%;
+    top: 60%;
     left:50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -29,6 +36,49 @@ img {
     position: absolute;
     top: -3em;
     left: calc(50% - 50px)
+
+}
+
+nav img{
+    border-radius: 0px;
+    width: 10em;
+    margin-top: 2em;
+}
+
+header{
+    color: #0A183C;
+
+}
+
+ul {
+    display: flex;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#0A183C ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: arial;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 2em 100px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ffc107;
 
 }
 
@@ -58,6 +108,8 @@ input[type="text"], [type="date"], [type="email"]{
     height: 2em;
     color: #fff;
     font-size: 16px;
+    font-family: sans-serif;
+
 }
 
 input[type="submit"]{
