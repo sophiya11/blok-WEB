@@ -12,9 +12,7 @@
        <header>
         <nav>
             <ul>
-                <li><a href="https://www.eurostar.com/nl-nl/?"><img src="images/eurologo.png" alt="eurostar logo"></a></li>
-                <li><a href="web.html">Leeslijst</a></li>
-                <li><a href="inloggen.html">Account</a></li>
+                <li><a href="web.html"><img src="images/eurologo.png" alt="eurostar logo"></a></li>
             </ul>
         </nav>
     </header>
@@ -24,12 +22,12 @@
         <h1>Log in</h1>
         <form action="web.html">
 
-            <label for="name">Naam</label>
-            <input id="naam" type="text" placeholder="Voornaam">
+            <label for="naam">Naam
+            <input id="naam" type="text" placeholder="Voornaam"></label>
 
-            <label for="email">E-mail <input type="email" placeholder="example@email.com"></label>
+            <label>E-mail <input type="email" placeholder="example@email.com"></label>
 
-            <label for="postcode"> Postcode <input type="text" required length="6" pattern="[1-9][0-9]{3} ?(?)" placeholder="1234AB"></label>
+            <label for="wachtwoord"> Wachtwoord <input type="password" name="wachtwoord" required></label>
 
              <label for="geboortedatum">Geboortedatum <input type="date" placeholder="dd-mm-jjjj"></label>
 

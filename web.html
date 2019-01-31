@@ -8,15 +8,16 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400|Maven+Pro|Montserrat|PT+Sans" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Document</title>
 </head>
 
 <body>
-    <script src="js/javascript.js"></script>
     <header>
         <nav>
             <ul>
-                <li><a href="https://www.eurostar.com/nl-nl/?"><img src="images/eurologo.png" alt="eurostar logo"></a></li>
+                <li><a href="web.html"><img src="images/eurologo.png" alt="eurostar logo"></a></li>
                 <li><a href="web.html">Leeslijst</a></li>
                 <li><a href="inloggen.html">Account</a></li>
             </ul>
@@ -24,6 +25,9 @@
     </header>
 
     <section>
+
+        <span onclick="openNav()">&#9776; filters</span>
+
         <form>
             <select name="sorteer">
                 <option value="sorteer">sorteer</option>
@@ -38,6 +42,8 @@
 
     <div id="myFiltermenu" class="filtermenu">
 
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
         <h3>zoeken</h3>
         <form>
             <input type="text" placeholder="Zoeken..">
@@ -47,40 +53,49 @@
             <h3>Onderwerp </h3>
             <ul>
                 <li>
-                    <input type="checkbox">
-                    <label>vreugde</label>
+                    <label><input type="checkbox">
+                        <span>vreugde</span></label>
                 </li>
                 <li>
-                    <input type="checkbox">
-                    <label>Fictie</label>
+                    <label><input type="checkbox">
+                        <span>
+                            Fictie
+                        </span>
+                    </label>
                 </li>
                 <li>
-                    <input type="checkbox">
-                    <label>Bekende mensen</label>
+                    <label><input type="checkbox">
+                        <span>Bekende mensen</span>
+                    </label>
                 </li>
                 <li>
-                    <input type="checkbox">
-                    <label>Duister</label>
+                    <label><input type="checkbox">
+                        <span>Duister</span>
+                    </label>
                 </li>
                 <li>
-                    <input type="checkbox">
-                    <label>Vaag</label>
+                    <label><input type="checkbox">
+                        <span>Vaag</span>
+                    </label>
                 </li>
             </ul>
 
             <h3>Leesduur </h3>
             <ul>
                 <li>
-                    <input type="checkbox">
-                    <label>0 - 1 minuut</label>
+                    <label><input type="checkbox">
+                        <span>0 - 1 minuut</span>
+                    </label>
                 </li>
                 <li>
-                    <input type="checkbox">
-                    <label>1 - 3 minuten</label>
+                    <label><input type="checkbox">
+                        <span>1 - 3 minuten</span>
+                    </label>
                 </li>
                 <li>
-                    <input type="checkbox">
-                    <label> 3 + minuten</label>
+                    <label><input type="checkbox">
+                        <span>3 + minuten</span>
+                    </label>
                 </li>
 
             </ul>
@@ -88,16 +103,19 @@
             <h3>Verhaallengte </h3>
             <ul>
                 <li>
-                    <input type="checkbox">
-                    <label>Kort</label>
+                    <label><input type="checkbox">
+                        <span>Kort</span>
+                    </label>
                 </li>
                 <li>
-                    <input type="checkbox">
-                    <label>Middel</label>
+                    <label><input type="checkbox">
+                        <span>Middel</span>
+                    </label>
                 </li>
                 <li>
-                    <input type="checkbox">
-                    <label>Lang</label>
+                    <label><input type="checkbox">
+                        <span>Lang</span>
+                    </label>
                 </li>
 
             </ul>
@@ -106,32 +124,26 @@
 
     </div>
 
+    <main id="main">
 
+        <h1>99 Verhalen</h1>
 
+        <p>Wilt u verhalen lezen tijdens uw reis? Dan hebben wij de beste collectie aan verhalen waar u uit kan kiezen! Breng je reis door met de verhalen van Molovich. </p>
 
-    <h1>99 Verhalen</h1>
+        <div>
+            <article>
 
-    <hr />
+                <h3> Vrije versvorm</h3>
+                <a href="verhaal.html">
+                    <img src="images/vormgeving%20verhaal%20desktop-03.png" alt="Foto vrije versvorm">
 
-    <p>Wilt u verhalen lezen tijdens uw reis? Dan hebben wij de beste collectie aan verhalen waar u uit kan kiezen! Breng je reis door met de verhalen van Molovich. </p>
+                </a>
 
+                <footer>
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    <p>276 x gelezen </p>
 
-    <div>
-        <article>
-
-            <h3> Vrije versvorm</h3>
-            <a href="verhaal.html">
-                <img src="images/vrijeversvorm.jpg" alt="Foto vrije versvorm">
-
-            </a>
-
-
-
-            <footer>
-                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                <p>276 x gelezen </p>
-
-                <div class="more">
+                    <!--  <div class="more">
                     <svg width="32px" height="32px" viewBox="0 0 32 32">
                         <circle cx="16" cy="16" r="15"></circle>
                         <g id="plus">
@@ -140,74 +152,136 @@
                         </g>
                     </svg>
                 </div>
-                <!-- bron:https://dribbble.com/shots/3124507-Add-Cancel-Micro-Interaction -->
-            </footer>
+                bron:https://dribbble.com/shots/3124507-Add-Cancel-Micro-Interaction -->
+                </footer>
 
-        </article>
-
-
-        <article>
-
-            <h3> Zombie </h3>
-            <a href="vrijeversvorm.html">
-                <img src="images/vrijeversvorm.jpg" alt="thumbnail">
-            </a>
-            <footer>
-                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                <p>314 x gelezen </p>
-            </footer>
-
-        </article>
-
-        <article>
-
-            <h3> Haiku </h3>
-            <a href="vrijeversvorm.html">
-                <img src="images/vrijeversvorm.jpg" alt="thumbnail">
-            </a>
+            </article>
 
 
+            <article>
 
-        </article>
+                <h3> Interview </h3>
+                <a href="vrijeversvorm.html">
+                    <img src="images/Interview%20(78).jpg" alt="thumbnail">
+                </a>
+                <footer>
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    <p>314 x gelezen </p>
+                </footer>
 
-        <article>
+            </article>
 
-            <h3> Zoon </h3>
-            <a href="vrijeversvorm.html">
-                <img src="images/vrijeversvorm.jpg" alt="thumbnail">
-            </a>
+            <article>
+
+                <h3> Onomatopee </h3>
+                <a href="vrijeversvorm.html">
+                    <img src="images/Onomatopee%20jasper%20koenen.jpg" alt="thumbnail">
+                </a>
+
+                <footer>
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    <p>580 x gelezen </p>
+                </footer>
+            </article>
+
+            <article>
+
+                <h3> Droom </h3>
+                <a href="vrijeversvorm.html">
+                    <img src="images/Droom%203%20L%2060em.jpg" alt="thumbnail">
+                </a>
+                <footer>
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    <p>249 x gelezen </p>
+                </footer>
+
+            </article>
+
+            <article>
+
+                <h3> Schoorsteen </h3>
+                <a href="vrijeversvorm.html">
+                    <img src="images/Schoorsteen%2012%20L%2040em.png" alt="thumbnail">
+                </a>
+                <footer>
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    <p>608 x gelezen </p>
+                </footer>
+
+            </article>
+
+            <article>
+
+                <h3> Kater </h3>
+                <a href="vrijeversvorm.html">
+                    <img src="images/Kater%2031%20L%2040em.jpg" alt="thumbnail">
+                </a>
+                <footer>
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    <p>324 x gelezen </p>
+                </footer>
+            </article>
+
+            <article>
+
+                <h3> zombie </h3>
+                <a href="vrijeversvorm.html">
+                    <img src="images/Zombie%2089%20L%2060em.png" alt="thumbnail">
+                </a>
+                <footer>
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    <p>257 x gelezen </p>
+                </footer>
+
+            </article>
+
+            <article>
+
+                <h3> Haiku </h3>
+                <a href="vrijeversvorm.html">
+                    <img src="images/Schermafbeelding%202019-01-31%20om%2002.21.36.png" alt="thumbnail">
+                </a>
+                <footer>
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    <p>296 x gelezen </p>
+                </footer>
+
+            </article>
+
+            <article>
+
+                <h3> Regionaal dagblad </h3>
+                <a href="vrijeversvorm.html">
+                    <img src="images/Schermafbeelding%202019-01-31%20om%2002.21.53.png" alt="thumbnail">
+                </a>
+                <footer>
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    <p>433 x gelezen </p>
+                </footer>
+
+            </article>
 
 
-        </article>
-
-        <article>
-
-            <h3> Droom </h3>
-            <a href="vrijeversvorm.html">
-                <img src="images/vrijeversvorm.jpg" alt="thumbnail">
-            </a>
-
-
-
-        </article>
-
-        <article>
-
-            <h3> Beroemd </h3>
-            <a href="vrijeversvorm.html">
-                <img src="images/vrijeversvorm.jpg" alt="thumbnail">
-            </a>
-
-
-
-        </article>
-
-    </div>
+        </div>
+    </main>
 
 
     <footer>
 
+        <h4>Volg ons op:</h4>
+
+        <ul>
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+
+            <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+
+        </ul>
+
     </footer>
+
+
     <script type="text/javascript" src="js/javascript.js"></script>
 
 </body>
